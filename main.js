@@ -265,7 +265,7 @@ function renderMusic() {
                 src= "${music.music}"
               ></audio>
     </div>
-    <div class="box__content-music-wrapper-list-icons">
+    <div class="box__content-music-wrapper-list-icons c-0">
       <i
         class="
           box__content-music-wrapper-list-icons-icon
