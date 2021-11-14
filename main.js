@@ -25,6 +25,12 @@ const upVolumeBtn = $(".up-volume-btn");
 const muteVolumeBtn = $(".mute-btn");
 const wrapperVolumeBtn = $(".footer-right-volumes-hide");
 const inputVolumeBtn = $(".footer-right-volumes-volume");
+const sideBar = $(".sidebar");
+const listIcon = $(".list");
+const closeBtn = $(".close-btn");
+const header = $(".header");
+
+console.log(header);
 
 let isReadyToDrag = false;
 let isPlaying = false;
@@ -586,4 +592,29 @@ inputVolumeBtn.addEventListener("change", function (e) {
   }
 });
 
-//search bài hát
+// ấn vào mobile or tablet hiện modal
+
+listIcon.addEventListener("touchstart", (e) => {
+  sideBar.classList.remove("m-0");
+  sideBar.classList.remove("c-0");
+  sideBar.classList.add("c-12");
+  sideBar.classList.add("m-12");
+  header.classList.add("m-0");
+  header.classList.remove("m-12");
+  header.classList.add("c-0");
+  header.classList.remove("c-12");
+  console.log("hello");
+});
+
+closeBtn.addEventListener("touchstart", (e) => {
+  sideBar.classList.add("m-0");
+  sideBar.classList.add("c-0");
+  sideBar.classList.remove("c-12");
+  sideBar.classList.remove("m-12");
+  header.classList.remove("m-0");
+  header.classList.add("m-12");
+  header.classList.remove("c-0");
+  header.classList.add("c-12");
+});
+
+console.log(sideBar);
