@@ -148,7 +148,7 @@
   position: absolute;
   color: #fff;
   top: 50%;
-  right: 63px;
+  right: 18px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   cursor: pointer;
@@ -741,4 +741,11 @@
 }
 .active3 {
   color: #fe63da !important;
+}
+.sidebar__logo-img-content {
+  display: none;
+}
+
+.header__list-search {
+  display: block;
 }
