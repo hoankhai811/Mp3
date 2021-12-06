@@ -619,4 +619,4 @@ closeBtn.addEventListener("touchstart", (e) => {
 
 console.log(sideBar);
 
-console.log(sideBar);
+
